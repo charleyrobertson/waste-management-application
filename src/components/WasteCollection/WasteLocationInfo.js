@@ -10,7 +10,7 @@ export default function WasteLocationInfo()
     let params = useParams();
     let navigate = useNavigate();
     let postcode = params.postcode;
-    let fetchURL = "http://localhost:3000/postcode-waste-information/" + postcode;
+    let fetchURL = "https://waste-management-api-c.herokuapp.com/postcode-waste-information/" + postcode;
     console.log(fetchURL);   
 
       const [postcodeInfo, setPostcodeInfo] = useState([

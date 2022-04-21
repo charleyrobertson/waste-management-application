@@ -14,7 +14,7 @@ export default function BinInformation()
     let [searchParams, setSearchParams] = useSearchParams();
     let postcode = params.postcode;
     let colour = params.colour;
-    let fetchURL = "http://localhost:3000/postcode-waste-information/" + postcode;
+    let fetchURL = "https://waste-management-api-c.herokuapp.com/postcode-waste-information/" + postcode;
     console.log(fetchURL);   
 
       const [postcodeInfo, setPostcodeInfo] = useState([

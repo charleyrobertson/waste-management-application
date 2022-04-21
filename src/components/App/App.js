@@ -45,7 +45,7 @@ function App() {
 
   useEffect(() => {
     async function getPostcodesList() {
-      const res = await fetch('http://localhost:3000/postcode-waste-information');
+      const res = await fetch('https://waste-management-api-c.herokuapp.com/postcode-waste-information');
       const data = await res.json();
       setPostcodesList(data);
       //console.log(data);
@@ -64,7 +64,7 @@ function App() {
 
   useEffect(() => {
     async function getRecyclingCentres() {
-      const res = await fetch('http://localhost:3000/recycling-centres');
+      const res = await fetch('https://waste-management-api-c.herokuapp.com/recycling-centres');
       const data = await res.json();
       setRecyclingCentres(data);
       //console.log(data);
