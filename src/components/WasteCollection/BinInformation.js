@@ -27,6 +27,7 @@ export default function BinInformation()
               {
                 bincolour: "",
                 description: "",
+                qrcode: "",
                 daysbetween: 0,
                 accepteditems: [],
               },
@@ -79,7 +80,8 @@ export default function BinInformation()
       console.log(bin);
 
       const downloadImage = () => {
-        saveAs('https://i.postimg.cc/jjCH6T1f/Untitled.png', 'QRCode')
+        saveAs(bin.qrcode, 'QRCode')
+       
       }
 
     return (
@@ -88,6 +90,7 @@ export default function BinInformation()
         <p>Please click the button to download the QR code that you can attach to your {bin.bincolour} waste bin!</p>
         <Button variant='secondary' onClick={downloadImage}>Download QR Code</Button>
         &nbsp;
+        {/* //{ console.log(bin.qrcode)} */}
         <Button 
           variant='secondary' 
           onClick={() => {navigate("/waste-information/" + postcodeInfo.postcode)
@@ -99,7 +102,6 @@ export default function BinInformation()
 
           <br/>
 
-            
           <label for="itemsinput">Search for an item:</label>
                 &nbsp;
                 <input 

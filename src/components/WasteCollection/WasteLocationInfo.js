@@ -23,6 +23,7 @@ export default function WasteLocationInfo()
               {
                 bincolour: "",
                 description: "",
+                qrcode: "",
                 daysbetween: 0,
                 accepteditems: [],
               },

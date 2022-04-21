@@ -36,6 +36,7 @@ function App() {
         {
           bincolour: "",
           description: "",
+          qrcode: "",
           daysbetween: 0,
           accepteditems: [],
         },
