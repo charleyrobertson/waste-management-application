@@ -1,6 +1,7 @@
 {
   "name": "waste-management-application",
   "version": "0.1.0",
+  "homepage": "https://waste-management-charley.herokuapp.com/",
   "private": true,
   "dependencies": {
     "@googlemaps/react-wrapper": "^1.1.31",
