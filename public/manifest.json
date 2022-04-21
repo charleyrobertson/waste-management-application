@@ -25,7 +25,8 @@
       "type":"image/png"
     } ],
     "theme_color":"#ffffff", 
-    "start_url":"https://waste-management-charley.herokuapp.com/",
+    "start_url":"/",
+    "homepage": "https://waste-management-charley.herokuapp.com/",
     "background_color":"#ffffff",
     "orientation": "portrait",
     "display":"standalone"
